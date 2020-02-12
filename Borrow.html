@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一次作業demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/borrow.css">
+    <script>
+        function suc(num) {
+            var btn1 = document.getElementById('borrow1');
+            var btn2 = document.getElementById('borrow2');
+            var btn3 = document.getElementById('borrow3');
+            var btn4 = document.getElementById('borrow4');
+            var btn5 = document.getElementById('borrow5');
+            var row1 = document.getElementById('row1');
+            var row2 = document.getElementById('row2');
+            var row3 = document.getElementById('row3');
+            var row4 = document.getElementById('row4');
+            var row5 = document.getElementById('row5');
+            alert('借出成功，感謝您的慷慨解囊!\n正在導向匯款頁面...');
+
+            switch (num) {
+                case 1:
+                    btn1.innerHTML = '<p> 已借出 </p>';
+                    row1.style.backgroundColor = 'rgb(196, 194, 194)';
+                    break;
+                case 2:
+                    btn2.innerHTML = '<p> 已借出 </p>';
+                    row2.style.backgroundColor = 'rgb(196, 194, 194)';
+                    break;
+                case 3:
+                    btn3.innerHTML = '<p> 已借出 </p>';
+                    row3.style.backgroundColor = 'rgb(196, 194, 194)';
+                    break;
+                case 4:
+                    btn4.innerHTML = '<p> 已借出 </p>';
+                    row4.style.backgroundColor = 'rgb(196, 194, 194)';
+                    break;
+                case 5:
+                    btn5.innerHTML = '<p> 已借出 </p>';
+                    row5.style.backgroundColor = 'rgb(196, 194, 194)';
+                    break;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-white mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="demo.html"><img src="./img/1.png"></a>
+            <ul class="navbar-nav" style="font-size: 0.5vw;">
+                <li class="nav-item">
+                    <a class="nav-link" href="demo.html" style="padding: 15px;">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.aifian.com/giveback.html" style="padding: 15px;">數據回饋</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.aifian.com/howitworks.html" style="padding: 15px;">如何運作</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.aifian.com/faq.html" style="padding: 15px;">了解更多</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="alert('此功能尚未開啟，請敬請期待!')" style="padding: 15px;">我的帳戶</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="background-color: tomato;color: white; border-radius: 30px;padding: 15px  25px;" href="https://www.aifian.com/app.html">免費下載</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <table id="table" style="box-shadow:8px 8px #cccccc;">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>利率</th>
+                <th>請求金額</th>
+                <th>還款時間</th>
+                <th>信用分數</th>
+                <th>貸款人</th>
+                <th>地區</th>
+                <th>用途</th>
+                <th>借出金額</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="row1">
+                <th scope="row">1</th>
+                <td>5%</td>
+                <td>40000 NT</td>
+                <td>3個月</td>
+                <td>1056</td>
+                <td>John</td>
+                <td>高雄左營區</td>
+                <td>網拍周轉</td>
+                <td>
+                    <div id="borrow1">
+                        <input type="button" onclick="suc(1)" value="確定借出">
+
+
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr id="row2">
+                <th scope="row">2</th>
+                <td>7%</td>
+                <td>10000 NT</td>
+                <td>1個月</td>
+                <td>650</td>
+                <td>Ken</td>
+                <td>新北淡水區</td>
+                <td>醫療費</td>
+                <td>
+                    <div id="borrow2">
+                        <input type="button" onclick="suc(2)" value="確定借出">
+
+
+                    </div>
+                </td>
+            </tr>
+            <tr id="row3">
+                <th scope="row">3</th>
+                <td>2%</td>
+                <td>30000 NT</td>
+                <td>1個月</td>
+                <td>1596</td>
+                <td>Candy</td>
+                <td>雲林虎尾鎮</td>
+                <td>清償卡債</td>
+                <td>
+                    <div id="borrow3">
+                        <input type="button" onclick="suc(3)" value="確定借出">
+
+
+                    </div>
+                </td>
+            </tr>
+            <tr id="row4">
+                <th scope="row">4</th>
+                <td>1%</td>
+                <td>3000 NT</td>
+                <td>4個月</td>
+                <td>2096</td>
+                <td>jimin</td>
+                <td>韓國清潭洞</td>
+                <td>買手機</td>
+                <td>
+                    <div id="borrow4">
+                        <input type="button" onclick="suc(4)" value="確定借出">
+
+
+                    </div>
+                </td>
+            </tr>
+            <tr id="row5">
+                <th scope="row">5</th>
+                <td>9%</td>
+                <td>50000 NT</td>
+                <td>2個月</td>
+                <td>596</td>
+                <td>Cindy</td>
+                <td>台北松山區</td>
+                <td>公司周轉</td>
+                <td>
+                    <div id="borrow5">
+                        <input type="button" onclick="suc(5)" value="確定借出">
+
+
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</高雄左營區

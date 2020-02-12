@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一次作業demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/loan.css">
+    <script>
+        function change(num) {
+            var oBtn = document.getElementById('pay');
+            var oBtn1 = document.getElementById('pay1');
+            var chk1 = document.getElementById('line1');
+            var chk2 = document.getElementById('line2');
+            alert('正在連線到債權人帳戶...');
+            switch (num) {
+                case 1:
+
+                    oBtn.innerHTML = '<p> 已繳款 </p>';
+                    chk1.innerHTML = '<div id="line"><p>100%</p></div>';
+                    break;
+                case 2:
+
+                    oBtn1.innerHTML = '<p> 已繳款 </p>';
+                    chk2.innerHTML = '<h6>71%</h6>';
+                    break;
+            }
+
+
+
+
+        }
+
+        function suc() {
+            var txt = document.getElementById('text1');
+            var txt1 = document.getElementById('text2');
+            alert('送出成功，請耐心等候');
+            txt.value = null;
+            txt1.value = null;
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-white mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="demo.html"><img src="./img/1.png"></a>
+            <ul class="navbar-nav" style="font-size: 0.5vw;">
+                <li class="nav-item">
+                    <a class="nav-link" href="demo.html" style="padding: 15px;">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.aifian.com/giveback.html" style="padding: 15px;">數據回饋</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.aifian.com/howitworks.html" style="padding: 15px;">如何運作</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.aifian.com/faq.html" style="padding: 15px;">了解更多</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="alert('此功能尚未開啟，請敬請期待!')" style="padding: 15px;">我的帳戶</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="background-color: tomato;color: white; border-radius: 30px;padding: 15px  25px;" href="https://www.aifian.com/app.html">免費下載</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="head">
+        <p>您的信用積分</p><br>
+        <h1>995</h1><br>
+
+        <div id="body1">
+            <p>累計借款金額</p>
+            <h1>123456</h1>
+        </div>
+        <div id="body3">
+            <p>逾期次數</p>
+            <h1>0</h1>
+        </div>
+        <div id="body2">
+            <p>信用等級</p>
+            <h1>健康</h1>
+        </div>
+        <hr>
+        <form>
+            <input id="text1" type="text" name="欄位名稱" placeholder="請輸入用途">
+            <input id="text2" type="text" name="欄位名稱" placeholder="請輸入金額">
+        </form>
+        <input type="button" onclick="suc()" value="送出">
+        <hr>
+        <div id="body4">
+            <p>借款紀錄</p>
+            <table id="table">
+                <thead>
+                    <th>借款日期</th>
+                    <th>金額</th>
+                    <th>用途</th>
+                    <th>利息</th>
+                    <th>借款時間</th>
+                    <th>總應繳金額</th>
+                    <th>本期應繳納金額</th>
+                    <th>繳款進度</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2019.12.23</td>
+                        <td>30000 NT</td>
+                        <td>買遊戲點數</td>
+                        <td>2%</td>
+                        <td>1 個月</td>
+                        <td>30050 NT</td>
+                        <td>30050 NT</td>
+                        <td>
+                            <div id="line1">
+                                <h6>0%</h6>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div id="pay">
+                                <input type="button" onclick="change(1)" value="我要繳款">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2019.09.13</td>
+                        <td>40000 NT</td>
+                        <td>買水果</td>
+                        <td>1%</td>
+                        <td>7 個月</td>
+                        <td>40233 NT</td>
+                        <td>5748 NT</td>
+                        <td>
+                            <div id="line2">
+                                <h6>57%</h6>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="pay1">
+                                <input type="button" onclick="change(2)" value="我要繳款">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2019.06.13</td>
+                        <td>80000 NT</td>
+                        <td>醫藥費</td>
+                        <td>1%</td>
+                        <td>1 個月</td>
+                        <td>80067 NT</td>
+                        <td>0 NT</td>
+                        <td>
+                            <div id="line">
+                                <p>100%</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="pay">
+                                <p>已繳款</p>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <div id="foot"></div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html元

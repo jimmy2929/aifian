@@ -1,0 +1,30 @@
+#table {
+    width: 80%;
+    margin: 0% 10%;
+}
+
+thead tr {
+    height: 3vw;
+    background-color: indianred;
+    border-top-right-radius: 10px;
+}
+
+tbody tr {
+    height: 2.8vw;
+    background-color: rgb(226, 221, 221);
+}
+
+th {
+    width: 1%;
+    padding: 2% 1%;
+    font-weight: 600;
+}
+
+td {
+    width: 1%;
+    padding: 1%;
+}
+
+tbody p {
+    margin: 5%;
+}
