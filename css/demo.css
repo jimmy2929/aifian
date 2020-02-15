@@ -1,40 +1,48 @@
-#card {
-    width: 40%;
-    height: 20vw;
-    margin: 5% 30%;
-    background: linear-gradient(to right, rgb(17, 40, 102), rgb(3, 3, 56));
-    border-radius: 20px;
-    outline: none;
+.content {
+    display: flex;
+    justify-content: center;
 }
 
-#left {
-    width: 50%;
-    height: 20vw;
-    float: left;
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
-.text h4 {
-    margin-left: 10%;
-    margin-top: 25%;
-    font-weight: 900;
-    font-family: 微軟正黑體;
-    color: rgb(102, 131, 185);
-    text-align: left;
-    font-size: 2.5vw;
+#img {
+    margin-top: 100px;
 }
 
-.text h6 {
-    margin-left: 10%;
-    margin-top: 35%;
-    font-weight: 600;
-    font-family: 微軟正黑體;
-    color: rgb(102, 131, 185);
-    text-align: left;
-    font-size: 0.9vw;
+@media screen and (max-width:1200px) {
+    .nav-item {
+        width: 45%;
+    }
+    img {
+        width: 80%;
+        margin: 0px 10%;
+        padding: ;
+    }
 }
 
-#right {
-    width: 50%;
-    height: 20vw;
-    float: right;
+@media screen and (max-width:575px) {
+    .navbar {
+        padding: 0px;
+    }
+    .navbar-nav {
+        width: 100%;
+    }
+    .navbar-brand {
+        width: 90%;
+        padding: 0px;
+        margin: 0% 5% auto;
+    }
+    .nav-item {
+        width: 90%;
+        margin: 0% 5% auto;
+    }
+    #img {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
 }
