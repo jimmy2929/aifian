@@ -51,7 +51,7 @@ form input {
 #table {
     width: 90%;
     margin: 0% 5%;
-    text-align: left;
+    text-align: center;
 }
 
 tbody tr td button {
@@ -76,7 +76,9 @@ tbody h6 {
 #pay p {
     font-size: medium;
 }
-
+#pay1 p {
+    font-size: medium;
+}
 .navbar-nav {
     display: flex;
     flex-wrap: wrap;
