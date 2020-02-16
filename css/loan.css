@@ -140,4 +140,8 @@ tbody h6 {
     #title {
         font-size: 10px;
     }
+    #head {
+        width: 90%;
+        margin: 1% 5% auto;
+    }
 }
