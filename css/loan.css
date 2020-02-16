@@ -144,6 +144,10 @@ tbody h6 {
     }
     #head {
         width: 90%;
-        margin: 1% 5% auto;
+        margin: 5% 5%;
+    }
+    img {
+        width: 50%;
+        margin: 0px 25%;
     }
 }
