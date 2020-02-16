@@ -84,4 +84,8 @@ tbody p {
         width: 90%;
         margin: 0% 5% auto;
     }
+    img {
+        width: 50%;
+        margin: 0px 25%;
+    }
 }
