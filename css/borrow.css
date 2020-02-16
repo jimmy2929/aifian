@@ -88,4 +88,10 @@ tbody p {
         width: 50%;
         margin: 0px 25%;
     }
+    thead th {
+        font-size: 14px;
+    }
+    tbody td {
+        font-size: 12px;
+    }
 }
