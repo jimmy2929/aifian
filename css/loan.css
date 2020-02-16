@@ -137,4 +137,7 @@ tbody h6 {
     #head h1 {
         font-size: 25px;
     }
+    #title {
+        font-size: 10px;
+    }
 }
