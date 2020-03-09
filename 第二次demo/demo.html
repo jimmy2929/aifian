@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <script>
+        function open1() {
+
+
+            alert('正在導入Facebook頁面...');
+            var chg1 = document.getElementById('collect');
+            var chg2 = document.getElementById('ticket');
+            var yes = document.getElementById('yes');
+            var no = document.getElementById('no');
+            var chg = document.getElementsByClassName('collect2');
+            var txt = document.getElementById('btn');
+            chg[0].style.display = "none";
+            chg[1].style.display = "none";
+            chg1.style.display = "block";
+            chg2.style.display = "block";
+            txt.innerHTML = '<h3><i class="fas fa-user"></i> &nbsp; <span style="color: rgba(37, 37, 37,0.6);border-bottom:solid 1px;"> aifian </span> &nbsp; 您好</h3>'
+
+        }
+
+        function open2(num) {
+            switch (num) {
+                case 1:
+                    window.open("./gift.html", "", "height=650, width=750, top=80, left=350, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no");
+                    break;
+                case 2:
+                    window.open("./how.html", "", "height=650, width=750, top=80, left=350, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no");
+                    break;
+            }
+
+        }
+
+        function lottery() {
+            alert('打開刮刮樂...');
+
+            function num() {
+                return Math.ceil(Math.random() * 10);
+            }
+            var num = num();
+
+            var goods = document.getElementById("card");
+            var lottery = document.getElementById("lottery");
+            switch (num) {
+                case 1:
+                    lottery.innerHTML = '<div id="card2"><p><i class ="fas fa-ticket-alt"></i></p></div>';
+                    alert('恭喜獲得電影票 雙人套票');
+                    break;
+                case 2:
+                    lottery.innerHTML = '<div id="card2"><p><i class="fas fa-money-bill-alt"></i></p></div>';
+                    alert('恭喜獲得電影票 一張!');
+                    break;
+                case 3:
+                    lottery.innerHTML = '<div id="card2"><p><i class="fas fa-money-bill-alt"></i></p></div>';
+                    alert('恭喜獲得7-11 500元禮卷!');
+                    break;
+                case 4:
+                    lottery.innerHTML = '<div id="card2"><p><i class="fas fa-money-bill-alt"></i></p></div>';
+                    alert('恭喜獲得全家 500元禮卷!');
+                    break;
+                case 5:
+                    lottery.innerHTML = '<div id="card2"><p><i class="fas fa-money-bill-alt"></i></p></div>';
+                    alert('恭喜獲得7-11 100元禮卷!');
+                    break;
+                default:
+                    lottery.innerHTML = '<div id="card2"><p><i class="far fa-frown"></i></p></div>';
+                    alert('安慰獎一份');
+                    break;
+
+
+            }
+        }
+
+        function again() {
+            alert('輸入五張發票即可再獲得一次機會!');
+            var lottery = document.getElementById("lottery");
+            lottery.innerHTML = '<div id="card"><button onclick="lottery()">抽獎!</button></div>';
+
+        }
+    </script>
+
+    <link rel="stylesheet" href="./css/demo.css">
+</head>
+
+<body style="background-image: url('./img/大背景.png');background-size: cover;background-repeat: no-repeat;background-attachment: fixed;">
+
+    <div id="contain">
+        <div id="login">
+            <a href="https://www.aifian.com/">
+                <img src="./img/1.png">
+            </a>
+            <div id="btn">
+                <a href="#" id="txt" onclick="open1()">
+                    <h4>登入</h4>
+                </a>
+            </div>
+
+
+        </div>
+        <div id="face">
+
+            <div id="img">
+                <img src="./img/組合.png">
+            </div>
+            <div id="inside">
+                <div id="story">
+                    <h2>我們是誰?</h2>
+                    <h4>
+                        在浩瀚的宇宙中有一顆美麗的QR星球，有很多QR星人在那裏快樂生活著。但在不久前他們遭遇了一場嚴重的地震，好多QR人的房子 ''發票屋'' 都倒塌了，所以不少流離失所的QR人來到了地球，想為自己找個家。雖然QR人連家都沒了，但他們是非常富有的星球，帶了非常多的寶物來地球，如果幫助他們可以獲得珍貴的寶藏喔!
+                    </h4>
+                </div>
+                <div id="want">
+                    <div id="yes"><a href="#first">我想幫忙</a></div>
+                    <div id="no"><a href="#second">直接拿獎品!</a></div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <hr id="first">
+
+        <div id="one" class="collect2">
+            <div id="head"><i class="fas fa-home"></i> 請幫我回家...</div>
+            <div class="word">
+                <h1>請先登入</h1>
+                <a href="##" id="login2" onclick="open1()">登入</a>
+            </div>
+        </div>
+        <div id="collect">
+
+            <div id="num">
+                <h3>成功找到</h3>
+                <h1>465</h1>
+                <h2>QR寶寶的家</h2>
+            </div>
+            <div id="reach">
+                <a href="https://cloud.magiclen.org/qrcode/scanner"><img src="./img/掃發票.jpg"></a>
+
+            </div>
+            <div id="other">
+                <div id="gift">
+                    <a href="###" onclick="open2(1)">
+                        <h1>方塊的報恩</h1>
+                    </a>
+                </div>
+                <div id="cheat">
+                    <a href="###" onclick="open2(2)">
+                        <h1>參加方式</h1>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <hr id="second">
+        <div id="two" class="collect2">
+            <div id="head2">
+                <i class="fas fa-gift"></i> 裡面的獎項也太豐富了吧!!!
+            </div>
+            <div class="word">
+                <h1>請先登入</h1>
+                <a href="##" id="login2" onclick="open1()">登入</a>
+            </div>
+        </div>
+        <div id="ticket">
+            <div id="title1">
+                <h1>刮刮樂</h1>
+            </div>
+
+            <div id="title">
+                <div id="lottery">
+                    <div id="card">
+                        <button onclick="lottery()"><a href="#second">抽獎!</a></button>
+                    </div>
+                </div>
+                <div class="choose">
+                    <a href="##" onclick="again()">
+                        <h2>想要在一張!</h2>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

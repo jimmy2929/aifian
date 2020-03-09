@@ -1,0 +1,29 @@
+#contain {
+    width: 90%;
+    margin: 5%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    display: block;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-family: 微軟正黑體;
+    padding-top: 10px;
+    color: rgba(255, 251, 251, 0.6);
+}
+
+.txt {
+    text-align: left;
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+    color: rgba(255, 251, 251, 0.6);
+}
+
+#ex {
+    text-align: center;
+    font-size: 100px;
+}

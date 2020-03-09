@@ -1,0 +1,614 @@
+    body {
+        margin: 0px;
+    }
+    
+    hr {
+        padding: 0%;
+        color: black;
+    }
+    
+    #login {
+        width: 100%;
+        height: 150px;
+        white-space: nowrap;
+    }
+    
+    #login img {
+        margin: 20px 0px;
+    }
+    
+    #btn {
+        float: right;
+    }
+    
+    #login h4 {
+        text-align: center;
+        line-height: 50px;
+        float: right;
+        background-color: rgb(255, 135, 105);
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        font-family: 微軟正黑體;
+        margin: 25px;
+        width: 100px;
+        height: 50px;
+    }
+    
+    #login h3 {
+        text-align: center;
+        line-height: 50px;
+        float: right;
+        color: rgb(107, 104, 104);
+        font-family: 微軟正黑體;
+        margin: 25px;
+        width: 100px;
+        height: 50px;
+    }
+    
+    #login h4:hover {
+        text-align: center;
+        line-height: 50px;
+        float: right;
+        background-color: rgb(255, 135, 105);
+        border-radius: 10px;
+        color: rgb(139, 130, 130);
+        font-family: 微軟正黑體;
+        margin: 25px;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+    }
+    
+    #contain {
+        width: 90%;
+        height: 2200px;
+        margin: 0px 5%;
+        margin-bottom: 5%;
+        float: left;
+    }
+    
+    #face {
+        width: 100%;
+        height: 30%;
+        display: block;
+    }
+    
+    #img {
+        width: 30%;
+        margin: 0px 5%;
+        margin-bottom: 2.5%;
+        height: 85%;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #img img {
+        flex: none;
+        width: 80%;
+        box-shadow: 10px 10px rgb(102, 101, 101);
+    }
+    
+    #inside {
+        width: 60%;
+        margin: 0%;
+        margin-bottom: 2.5%;
+        display: block;
+        float: right;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    
+    #story {
+        width: 80%;
+        margin: 0px 10%;
+        margin-top: 8%;
+        border-left: solid rgb(119, 118, 118) 4px;
+        padding: 0px 15px;
+        display: block;
+    }
+    
+    #story h2 {
+        font-size: 50px;
+        width: 250px;
+        font-family: 微軟正黑體;
+        color: rgb(105, 103, 101);
+        letter-spacing: 5px;
+    }
+    
+    #story h4 {
+        margin: 0px;
+        font-size: 23px;
+        font-family: 微軟正黑體;
+        color: rgb(105, 103, 101);
+    }
+    
+    #want {
+        width: 80%;
+        margin: 5% 10%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    #want div {
+        flex: none;
+        width: 180px;
+        height: 56px;
+        margin: 10px 7.5%;
+        background-color: rgb(233, 92, 67);
+        font-size: 30px;
+        text-align: center;
+        line-height: 56px;
+        font-family: 微軟正黑體;
+        font-weight: 600;
+        border-radius: 10px;
+    }
+    
+    #want a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #want a:hover {
+        text-decoration: none;
+        color: rgb(179, 175, 175);
+    }
+    
+    .collect2 {
+        width: 100%;
+        height: 30%;
+        margin: 50px 0px;
+        float: left;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    #head {
+        width: 80%;
+        flex: none;
+        height: 100px;
+        margin: 0px 50px;
+        font-size: 80px;
+        text-align: center;
+        border: none;
+        color: rgb(68, 68, 68);
+        padding: 10px;
+        font-family: 微軟正黑體;
+        font-weight: 600;
+    }
+    
+    #head2 {
+        flex: none;
+        width: 100%;
+        height: 70px;
+        margin: 0px 50px;
+        font-size: 48px;
+        text-align: center;
+        border: none;
+        padding: 10px;
+        color: rgb(68, 68, 68);
+        font-family: 微軟正黑體;
+        font-weight: 600;
+    }
+    
+    .word {
+        width: 80%;
+        flex: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .word h1 {
+        flex: none;
+        margin: 50px;
+        font-size: 30px;
+        border: none;
+        color: rgb(80, 79, 79);
+        padding: 0px;
+        border-radius: 10px;
+        font-family: 微軟正黑體;
+    }
+    
+    #login2 {
+        flex: none;
+        text-align: center;
+        line-height: 70px;
+        width: 100px;
+        height: 70px;
+        font-size: 30px;
+        font-weight: 600;
+        background-color: tomato;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 0px;
+        border-radius: 10px;
+        font-family: 微軟正黑體;
+    }
+    
+    #collect {
+        width: 100%;
+        height: 35%;
+        display: block;
+    }
+    
+    #num {
+        width: 70%;
+        height: 35%;
+        margin: 0% 5%;
+        margin-top: 3%;
+        padding: 0px 10%;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        display: inline-block;
+    }
+    
+    #num h3 {
+        font-size: 50px;
+        font-family: 微軟正黑體;
+        font-weight: 600;
+        color: tomato;
+        margin: 0px;
+        height: 33%;
+        line-height: 101px;
+    }
+    
+    #num h1 {
+        font-size: 80px;
+        font-family: 微軟正黑體;
+        font-weight: 600;
+        color: tomato;
+        text-align: center;
+        margin: 0px;
+        height: 33%;
+        line-height: 101px;
+    }
+    
+    #num h2 {
+        font-size: 50px;
+        font-family: 微軟正黑體;
+        font-weight: 600;
+        color: tomato;
+        text-align: right;
+        margin: 0px;
+        height: 33%;
+        line-height: 101px;
+    }
+    
+    #reach {
+        float: left;
+        width: 30%;
+        margin: 2.5% 5%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #reach a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #reach img {
+        flex: none;
+        width: 80%;
+        border-radius: 10px;
+    }
+    
+    #reach img:hover {
+        flex: none;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 10px 10px rgb(134, 133, 133);
+    }
+    
+    #other {
+        float: right;
+        width: 50%;
+        margin: 2% 5%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    #gift {
+        width: 80%;
+        margin: 5% 10%;
+        height: 30%;
+        background-color: tomato;
+        border-radius: 10px;
+        align-self: center;
+    }
+    
+    body a {
+        text-decoration: none;
+    }
+    
+    #other h1 {
+        font-size: 50px;
+        text-align: center;
+        font-family: 微軟正黑體;
+        color: white;
+        line-height: 100px;
+        margin: 0px;
+    }
+    
+    #other h1:hover {
+        font-size: 50px;
+        text-align: center;
+        font-family: 微軟正黑體;
+        color: rgba(14, 13, 13, 0.6);
+    }
+    
+    #cheat {
+        width: 80%;
+        margin: 5% 10%;
+        height: 30%;
+        background-color: tomato;
+        border-radius: 10px;
+        align-self: center;
+    }
+    
+    #ticket {
+        display: inline-block;
+        width: 100%;
+        height: 30%;
+    }
+    
+    #title1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #title1 h1 {
+        flex: none;
+        width: 240px;
+        font-size: 80px;
+        text-align: center;
+        color: tomato;
+        line-height: 92px;
+        margin: 40px 0px;
+        font-family: 微軟正黑體;
+        border: solid tomato 5px;
+        box-shadow: rgb(102, 101, 101) 10px 10px;
+    }
+    
+    #title {
+        width: 100%;
+        margin: 5% 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .choose {
+        flex: none;
+        width: 260px;
+        height: 92px;
+        margin: 1.5% 5%;
+        background-color: tomato;
+        border-radius: 10px;
+    }
+    
+    .choose1 {
+        flex: none;
+        width: 355px;
+        height: 92px;
+        margin: 1.5% 5%;
+        border-radius: 10px;
+    }
+    
+    .choose1 h2 {
+        font-size: 50px;
+        text-align: center;
+        line-height: 92px;
+        margin: 0px;
+        font-family: 微軟正黑體;
+        color: rgba(22, 22, 22, 0.6);
+    }
+    
+    .choose:hover {
+        flex: none;
+        width: 250px;
+        height: 82px;
+        margin: 1.5% 5%;
+        background-color: tomato;
+        border-radius: 10px;
+        background-color: rgba(253, 253, 253, 0.2);
+        border: solid tomato 5px;
+    }
+    
+    .choose h2 {
+        font-size: 40px;
+        text-align: center;
+        line-height: 92px;
+        margin: 0px;
+        font-family: 微軟正黑體;
+        color: white;
+    }
+    
+    .choose h2:hover {
+        font-size: 40px;
+        text-align: center;
+        line-height: 82px;
+        margin: 0px;
+        font-family: 微軟正黑體;
+        color: tomato;
+    }
+    
+    #lottery {
+        width: 80%;
+        height: 50%;
+        margin: 5% 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #card {
+        display: block;
+        flex: none;
+        width: 500px;
+        height: 300px;
+        background-color: rgba(64, 64, 68, 0.8);
+        border-radius: 20px;
+        text-align: center;
+        line-height: 300px;
+    }
+    
+    #card button {
+        width: 150px;
+        height: 70px;
+        border-radius: 10px;
+        background-color: rgba(253, 251, 251, 0.6);
+        border: none;
+        outline: none;
+        font-size: 30px;
+        color: rgb(107, 103, 103);
+        text-align: center;
+        font-weight: 600;
+        font-family: 微軟正黑體;
+    }
+    
+    #card button a {
+        color: rgb(107, 103, 103);
+    }
+    
+    #card button:hover {
+        width: 140px;
+        height: 60px;
+        border-radius: 10px;
+        outline: none;
+        background-color: rgba(253, 251, 251, 0.6);
+        border: none;
+        font-size: 30px;
+        color: rgb(58, 55, 55);
+        text-align: center;
+        font-weight: 600;
+        font-family: 微軟正黑體;
+    }
+    
+    #card button a:hover {
+        color: rgb(58, 55, 55);
+    }
+    
+    #card2 {
+        display: block;
+        flex: none;
+        width: 500px;
+        height: 300px;
+        background-color: rgba(64, 64, 68, 0.4);
+        border-radius: 20px;
+        text-align: center;
+        line-height: 300px;
+    }
+    
+    #card2 p {
+        transform: rotate(-10deg);
+        font-size: 200px;
+        margin: 0px;
+        color: rgba(49, 47, 46, 0.8);
+    }
+    
+    #collect {
+        display: none;
+    }
+    
+    #ticket {
+        display: none;
+    }
+    
+    @media screen and (max-width:1400px) {
+        .choose {
+            margin: 1.5% 30%;
+        }
+    }
+    
+    @media screen and (max-width:900px) {
+        #img {
+            display: none;
+        }
+        #inside {
+            width: 90%;
+            margin: 5%;
+        }
+        #reach img {
+            width: 100%;
+        }
+        #reach img:hover {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width:700px) {
+        #reach {
+            width: 50%;
+            margin: 5% 25%;
+        }
+        #other {
+            width: 80%;
+            margin: 5% 10%;
+        }
+        #other h1 {
+            font-size: 30px;
+            text-align: center;
+            font-family: 微軟正黑體;
+            color: rgb(252, 252, 252);
+        }
+        #other h1:hover {
+            font-size: 30px;
+            text-align: center;
+            font-family: 微軟正黑體;
+            color: rgba(14, 13, 13, 0.6);
+        }
+        #num h3 {
+            font-size: 30px;
+        }
+        #num h2 {
+            font-size: 30px;
+        }
+        #card {
+            width: 300px;
+            height: 200px;
+            line-height: 200px;
+        }
+        #card2 {
+            flex: none;
+            width: 300px;
+            height: 200px;
+            background-color: rgba(64, 64, 68, 0.4);
+            line-height: 200px;
+        }
+        #card2 p {
+            transform: rotate(-10deg);
+            font-size: 100px;
+            margin: 0px;
+        }
+    }
+    
+    @media screen and (max-width:500px) {
+        #head {
+            font-size: 60px;
+        }
+        #story h2 {
+            font-size: 40px;
+        }
+        #story h4 {
+            font-size: 18px;
+        }
+        #reach {
+            height: 25%;
+        }
+    }
